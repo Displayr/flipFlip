@@ -14,7 +14,7 @@ attach_flip <- function()
     return(invisible())
 
   suppressPackageStartupMessages(
-    lapply(to_load, library, character.only = TRUE, warn.conflicts = TRUE)
+    lapply(to_load, require, character.only = TRUE, warn.conflicts = TRUE)
   )
 
   invisible()
