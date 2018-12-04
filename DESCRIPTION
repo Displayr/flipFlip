@@ -8,5 +8,5 @@ Description: Utility functions to load all flip packages.
 Imports: utils
 License: GPL-3
 LazyData: TRUE
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
 Encoding: UTF-8

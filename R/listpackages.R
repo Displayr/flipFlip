@@ -8,9 +8,11 @@ flip_list <- c("flipU", "flipTime", "flipTransformations", "flipTables", "flipSt
 
 #' List Flip packages
 #' This function lists the flip packages that will be loaded
+#' @return A character vector of all known flip packages, invisibly.
 #' @export
-
 ListFlipPackages <- function()
 {
-    cat("List of Flip packages:", paste(flip_list, collapse = ", "), "\n")
+    msg <- paste0("List of Flip packages:", paste(flip_list, collapse = ", "))
+    message(msg)
+    invisible(flip_list)
 }

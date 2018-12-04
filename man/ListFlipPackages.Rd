@@ -7,6 +7,9 @@ This function lists the flip packages that will be loaded}
 \usage{
 ListFlipPackages()
 }
+\value{
+A character vector of all known flip packages, invisibly.
+}
 \description{
 List Flip packages
 This function lists the flip packages that will be loaded
