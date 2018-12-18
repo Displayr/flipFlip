@@ -3,7 +3,8 @@ flip_list <- c("flipU", "flipTime", "flipTransformations", "flipTables", "flipSt
                "flipPictographs", "flipStandardCharts", "flipPlots", "flipChart",
                "flipDashboard", "flipDimensionReduction", "flipRegression", "flipStartup",
                "flipTextAnalysis", "flipTrees", "flipChoice", "flipAnalysisOfVariance",
-               "flipMaxDiff", "flipQualtrics", "flipMultivariates", "flipCluster")
+               "flipMaxDiff", "flipQualtrics", "flipMultivariates", "flipCluster",
+               "rstanarm")
 
 
 #' List Flip packages
