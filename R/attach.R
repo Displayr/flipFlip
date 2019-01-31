@@ -14,12 +14,12 @@ attach_flip <- function()
     return(invisible())
 
   successes <- suppressWarnings(suppressPackageStartupMessages(
-    vapply(to_load, require, FALSE, character.only = TRUE, warn.conflicts = FALSE)
+    vapply(to_load, requireNamespace, FALSE, quietly = TRUE)
   ))
   if (any(!successes))
   {
       unavailable_pkgs <- paste(names(successes)[!successes], collapse = ", ")
-      msg <- paste0("The following flip packages are not installed and were not attached: ",
+      msg <- paste0("The following flip packages are not installed and were not load: ",
                     unavailable_pkgs, ".")
       warning(msg, call. = FALSE)
   }
