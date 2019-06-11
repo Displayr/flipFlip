@@ -4,7 +4,7 @@ flip_list <- c("flipU", "flipTime", "flipTransformations", "flipTables", "flipSt
                "flipDashboard", "flipDimensionReduction", "flipRegression", "flipStartup",
                "flipTextAnalysis", "flipTrees", "flipChoice", "flipAnalysisOfVariance",
                "flipMaxDiff", "flipQualtrics", "flipMultivariates", "flipCluster",
-               "rstanarm")
+               "flipTURF", "rstanarm")
 
 
 #' List Flip packages
