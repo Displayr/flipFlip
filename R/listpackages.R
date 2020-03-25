@@ -2,9 +2,8 @@ flip_list <- c("flipU", "flipTime", "flipTransformations", "flipTables", "flipSt
                "flipImputation", "flipData", "flipChartBasics", "flipAPI",
                "flipPictographs", "flipStandardCharts", "flipPlots", "flipChart",
                "flipDashboard", "flipDimensionReduction", "flipRegression", "flipStartup",
-               "flipTrees", "flipChoice", "flipAnalysisOfVariance",
-               "flipMaxDiff", "flipQualtrics", "flipMultivariates", "flipCluster",
-               "flipTURF")
+               "flipTrees", "flipAnalysisOfVariance", "flipQualtrics", "flipMultivariates",
+               "flipCluster", "flipTURF")
 
 
 #' List Flip packages
