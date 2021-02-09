@@ -1,4 +1,4 @@
-flip_list <- c("flipU", "flipTime", "flipTransformations", "flipTables", "flipStatistics",
+flip_list <- c("flipU", "flipTime", "flipTransformations", "verbs", "flipTables", "flipStatistics",
                "flipImputation", "flipData", "flipChartBasics", "flipAPI",
                "flipPictographs", "flipStandardCharts", "flipPlots", "flipChart",
                "flipDashboard", "flipDimensionReduction", "flipRegression", "flipStartup",
