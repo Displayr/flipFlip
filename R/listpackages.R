@@ -5,7 +5,7 @@ flip_list <- c("flipU", "flipTime", "flipTransformations", "verbs", "flipTables"
                "flipTrees", "flipAnalysisOfVariance", "flipQualtrics", "flipMultivariates",
                "flipCluster", "flipTURF")
 attach_list <- c("flipU", "lubridate", "flipTime", "flipTransformations",
-                    "flipChart", "verbs")
+                    "flipTables", "flipChart", "verbs")
 load_list <- setdiff(flip_list, attach_list)
 
 #' List Flip packages
