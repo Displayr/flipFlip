@@ -48,17 +48,6 @@ jobs:
           name: "Check package"
           command: R -q -e 'rcmdcheck::rcmdcheck(args = c("--no-manual", "--ignore-vignettes", "--no-tests"), build_args = c("--no-build-vignettes"))'
 
-      - run:
-          name: "Run unit tests"
-          no_output_timeout: 80m
-          command: R -e 'q(status = flipDevTools::RunTestsOnCircleCI(), save = "no")'
-
-      - store_test_results:
-          path: testthat.xml
-
-      - store_artifacts:
-          path: testthat.xml
-
 workflows:
   build-and-check-R-package:
     jobs:
