@@ -6,6 +6,26 @@ Author: Displayr <opensource@displayr.com>
 Maintainer: Displayr <opensource@displayr.com>
 Description: Utility functions to load all flip packages.
 License: GPL-3
+Suggests:
+    Displayr/flipAnalysisOfVariance,
+    Displayr/flipAPI,
+    Displayr/flipChart,
+    Displayr/flipChartBasics,
+    Displayr/flipCluster,
+    Displayr/flipDashboard,
+    Displayr/flipData,
+    Displayr/flipDimensionReduction,
+    Displayr/flipImputation,
+    Displayr/flipMultivariates,
+    Displayr/flipPictographs,
+    Displayr/flipPlots,
+    Displayr/flipQualtrics,
+    Displayr/flipRegression,
+    Displayr/flipStandardCharts,
+    Displayr/flipStartup,
+    Displayr/flipStatistics,
+    Displayr/flipTrees,
+    Displayr/flipTURF
 LazyData: TRUE
 RoxygenNote: 6.1.1
 Encoding: UTF-8
