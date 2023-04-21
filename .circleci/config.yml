@@ -39,6 +39,7 @@ jobs:
             R -q -e 'remotes::install_github("Displayr/flipDevTools")'
             R -q -e 'options(warn = 2); devtools::install_deps(dependencies = TRUE)'
             R -q -e 'devtools::load_all(); remotes::install_github(paste0("Displayr/", load_list))'
+            R -q -e 'remotes::install_github("Displayr/flipChart")'
 
       - save_cache:
           key: R-package-library-{{ checksum "/tmp/cache_vers" }}-{{ checksum "/tmp/R_version" }}
