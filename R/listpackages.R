@@ -4,8 +4,12 @@ flip_list <- c("flipU", "flipTime", "flipTransformations", "verbs", "flipTables"
                "flipDashboard", "flipDimensionReduction", "flipRegression", "flipStartup",
                "flipTrees", "flipAnalysisOfVariance", "flipQualtrics", "flipMultivariates",
                "flipCluster", "flipTURF")
-attach_list <- c("flipU", "lubridate", "flipTime", "flipTransformations",
-                    "flipTables", "flipChart", "verbs")
+# In the attach list all the package's exported symbols onto the search path (visible in search()).
+# i.e. flipFunction works without the flipPackage::flipFunction prefix
+attach_list <- c("flipU", "lubridate", "flipTime", "flipTransformations", "flipAPI",
+                 "flipTables", "flipChart", "verbs")
+# The load list reads the package namespace into memory, but does not attach it to the search path.
+# This means that the package's functions can be called using the flipPackage::flipFunction form
 load_list <- setdiff(flip_list, attach_list)
 
 #' List Flip packages
