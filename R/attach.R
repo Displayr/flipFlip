@@ -4,6 +4,9 @@
 packages_unloaded <- function(attach = FALSE)
 {
     pkg_list <- if (attach) attach_list else load_list
+    if (length(pkg_list) == 0) {
+        return(character())
+    }
     search <- paste0("package:", pkg_list)
     return(pkg_list[!search %in% search()])
 }
