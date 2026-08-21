@@ -4,6 +4,9 @@
 packages_unloaded <- function(attach = FALSE)
 {
     pkg_list <- if (attach) attach_list else load_list
+    if (length(pkg_list) == 0) {
+        return(character())
+    }
     search <- paste0("package:", pkg_list)
     return(pkg_list[!search %in% search()])
 }
@@ -12,7 +15,7 @@ attach_flip <- function()
 {
     to_load <- packages_unloaded(FALSE)
     to_attach <- packages_unloaded(TRUE)
-    if (length(to_load) == 0)
+    if (length(to_load) == 0 && length(to_attach) == 0)
       return(invisible())
 
     successes <- suppressWarnings(suppressPackageStartupMessages(
