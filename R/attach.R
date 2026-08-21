@@ -12,7 +12,7 @@ attach_flip <- function()
 {
     to_load <- packages_unloaded(FALSE)
     to_attach <- packages_unloaded(TRUE)
-    if (length(to_load) == 0)
+    if (length(to_load) == 0 && length(to_attach) == 0)
       return(invisible())
 
     successes <- suppressWarnings(suppressPackageStartupMessages(
