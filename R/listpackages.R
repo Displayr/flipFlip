@@ -4,13 +4,28 @@
 # attached wins. `verbs` sits at the end so `verbs::Sum` masks
 # `flipStatistics::Sum` (and Mean, Max, Min, etc.).
 flip_list <- c(
-    "flipU", "flipTime", "flipTransformations",
-    "flipFormat", "flipTables",
-    "flipDashboard", "flipStartup", "flipAPI",
-    "flipChartBasics", "flipStatistics", "flipImputation", "flipData",
-    "flipPictographs", "flipStandardCharts", "flipPlots", "flipChart",
-    "flipDimensionReduction", "flipRegression", "flipTrees",
-    "flipAnalysisOfVariance", "flipMultivariates", "flipCluster",
+    "flipAPI",
+    "flipAnalysisOfVariance",
+    "flipChart",
+    "flipChartBasics",
+    "flipCluster",
+    "flipDashboard",
+    "flipData",
+    "flipDimensionReduction",
+    "flipFormat",
+    "flipImputation",
+    "flipMultivariates",
+    "flipPictographs",
+    "flipPlots",
+    "flipRegression",
+    "flipStandardCharts",
+    "flipStartup",
+    "flipStatistics",
+    "flipTables",
+    "flipTime",
+    "flipTransformations",
+    "flipTrees",
+    "flipU",
     "verbs"
 )
 # In the attach list all the package's exported symbols onto the search path (visible in search()).
